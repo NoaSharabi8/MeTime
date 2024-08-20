@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">meTime</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login1">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="email1">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="hello_noa">Hello Noa</string>
+    <string name="let_s_find_nyour_time">Let\'s Find\nYour Time !</string>
+    <string name="make_an_appointment">Make an Appointment</string>
+    <string name="update_an_appointment">Update an Appointment</string>
+    <string name="cancel_an_appointment">Cancel an Appointment</string>
+    <string name="select_a_service">Select a Service</string>
+    <string name="name">Name:</string>
+    <string name="time">Time:</string>
+    <string name="price">Price:</string>
+    <string name="your_appointment_has_been_successfully_booked">Your appointment has been successfully booked !</string>
+    <string name="ok">OK</string>
+    <string name="next_week">Next Week</string>
+    <string name="previous_week">Previous Week</string>
+    <string name="schedule_an_appointment">Schedule an Appointment</string>
+    <string name="Next" />
+    <string name="next">Next</string>
+    <string name="forward" />
+    <string name="back" />
+    <string name="choose_your_treatment">Choose Your Treatment</string>
+    <string name="underlined_text" />
+</resources>

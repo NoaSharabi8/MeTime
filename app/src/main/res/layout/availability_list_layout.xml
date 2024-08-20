@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hours_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_outline"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/list_item_hour"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+</LinearLayout>

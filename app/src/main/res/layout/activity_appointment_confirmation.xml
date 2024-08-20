@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Activities.AppointmentConfirmationActivity"
+    android:background="@color/background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/appointment_confirmation_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/your_appointment_has_been_successfully_booked"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink" />
+
+    <!-- Appointment Details Box -->
+    <RelativeLayout
+        android:id="@+id/appointment_confirmation_RL_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_confirmation_TV_title"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+
+        android:background="#B0F1F1F1">
+
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_treatment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="treatment"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_appointment_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_confirmation_TV_treatment_name"
+            android:text="Day: "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_appointment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_confirmation_TV_appointment_day"
+            android:layout_marginTop="8dp"
+            android:text="Date: "
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_confirmation_TV_appointment_date"
+            android:layout_marginTop="8dp"
+            android:text="Start Time: "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_confirmation_TV_start_time"
+            android:layout_marginTop="8dp"
+            android:text="End Time: "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/appointment_confirmation_TV_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_confirmation_TV_end_time"
+            android:layout_marginTop="8dp"
+            android:text="Price: "
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <!-- Small Note -->
+    <TextView
+        android:id="@+id/appointment_confirmation_TV_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_confirmation_RL_details"
+        android:layout_marginTop="16dp"
+        android:text="Please arrive 5 minutes before the appointment starts."
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+
+    <!-- See You Message -->
+    <TextView
+        android:id="@+id/appointment_confirmation_TV_see_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_confirmation_TV_note"
+        android:layout_marginTop="16dp"
+        android:text="See you soon!"
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/home_IMG"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/img_logo_pic_only"
+        android:layout_below="@id/appointment_confirmation_TV_see_you"
+        android:layout_centerHorizontal="true"/>
+
+
+    <!-- Finish Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appointment_confirmation_BTN_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Finish"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

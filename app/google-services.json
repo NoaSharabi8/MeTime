@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627571683052",
+    "project_id": "metime-7fcff",
+    "storage_bucket": "metime-7fcff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627571683052:android:53fc22d8c9d9e1355d7fc9",
+        "android_client_info": {
+          "package_name": "com.example.metime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgPdonaN-glnWMq_ZPdIjD6FKMwhSpJNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activities.ServiceSelectionActivity"
+    android:background="@color/background">
+
+
+    <!-- Title of Service Selection -->
+    <TextView
+        android:id="@+id/my_appointments_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="My Appointments"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink"/>
+
+    <!-- Expandable List of Treatments -->
+    <FrameLayout
+        android:id="@+id/my_appointments_LISTVIEW_appointments_list"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/frame_outline"
+        android:layout_below="@id/my_appointments_TV_title"
+        android:layout_above="@+id/my_appointments_BTN_cancel"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/my_appointments_BTN_cancel"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/my_appointments_BTN_update"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Update"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/my_appointments_BTN_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back To Home"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+
+
+
+
+</RelativeLayout>

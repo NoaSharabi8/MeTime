@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Activities.LoginActivity"
+    android:background="@color/background">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/login_IMG"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/img_logo_pic" />
+
+    <TextView
+        android:id="@+id/login_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink"
+        android:layout_marginTop="200dp"/>
+
+    <EditText
+        android:id="@+id/login_ET_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_TV_title"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/login_ET_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ET_email"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ET_password"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/pink"/>
+
+    <TextView
+        android:id="@+id/login_TV_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_BTN_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/don_t_have_an_account_register"
+        android:textColor="@color/pink"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>

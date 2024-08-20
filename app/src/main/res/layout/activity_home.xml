@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Activities.HomeActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/home_TV_hello_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="Hello"
+        android:textColor="@color/pink"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/home_TV_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_TV_hello_message"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/pink"
+        android:layout_marginTop="25dp"
+        android:text="@string/let_s_find_nyour_time"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/home_IMG"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/img_logo_pic_only"
+        android:layout_below="@id/home_TV_sentence"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_make_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_IMG"
+        android:layout_marginTop="40dp"
+        android:text="New Appointment"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/pink"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_my_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_BTN_make_appointment"
+        android:layout_marginTop="25dp"
+        android:text="My Appointments"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/pink"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_BTN_setting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_BTN_my_appointments"
+        android:layout_marginTop="25dp"
+        android:text="Settings"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@color/pink"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/menu_RLT_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_below="@id/home_BTN_setting"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_IMG_insta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/img_instagram"
+            android:layout_centerHorizontal="true"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_IMG_facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/img_facebook"
+            android:layout_centerHorizontal="true"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_IMG_phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/img_phone"
+            android:layout_centerHorizontal="true"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/home_IMG_whatsup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/img_whatsup"
+            android:layout_centerHorizontal="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
