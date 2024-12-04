@@ -13,5 +13,5 @@ With an intuitive and personalized interface, you can:
 -	Review appointment details — including date, duration, and price
 -	Manage your appointments — view upcoming bookings and easily cancel if necessary
 
-All appointment information is updated in real time, ensuring a smooth, stress-free experience, 
-without the need for waiting or human intervention.
+All appointment information is updated in real time, ensuring a smooth, stress-free experience, <br>
+without the need for waiting or human intervention !
